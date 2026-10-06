@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galerry room's</title>
+    <link rel="stylesheet" href="galery.css">
+</head>
+<body>
+
+    <div class="gallery-room">
+
+        <h1>🎨 Gallery Romm</h1>
+        <p>Welcome to my little art musueum</p>
+
+        <div class="wall">
+
+           <div class="frame">
+            <img src="image/icon1.jpg" alt="icon">
+            <h3>Dream Sky</h3>
+            <p>by Arla</p>
+           </div>
+
+           <div class="frame">
+            <img src="image/icon1.jpg" alt="icon">
+            <h3>Flower world</h3>
+            <p>by Arla</p>
+           </div>
+
+           <div class="frame">
+            <img src="image/aliencat.png" alt="cat">
+            <h3>Litte Memories</h3>
+            <p>By Arla</p>
+           </div>
+
+           <div class="frame">
+            <img src="image/aliencat.png" alt="cat">
+            <h3>Sunset</h3>
+            <p>By Arla</p>
+           </div>
+
+        </div>
+
+        <h2>🌸 Community Gallery</h2>
+
+        <input type="text" id="username" placeholder="Your Name">
+
+        <input type="file" id="uploadImage">
+
+        <button onclick="uploadArt()">
+            ✨ Upload Artwork
+        </button>
+
+        <div class="wall" id="galleryWall">
+
+        </div>
+
+        <a href="../index.html" class="back-btn">
+            🏠 Home 
+        </a>
+       
+        <a href="../create.html" class="back-btn">
+            back to create room
+        </a>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/galery.js"></script>
+
+   
+    
+</body>
+</html>

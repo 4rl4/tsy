@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f3efff;
+}
+
+.gallery-room {
+    text-align: center;
+    padding:40px ;
+}
+
+.gallery-room h1 {
+    margin-bottom: 10px;
+}
+
+.wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.frame {
+    background: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+    transition: 3s;
+    border: 8px solid white;
+}
+
+.frame:hover{
+  transform:translateY(-10px) scale(1.03);
+}
+
+.frame img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 10px solid #d6c8ff;
+}
+
+.upload-btn,
+.back-btn {
+    display: inline-block;
+    margin-top: 40px;
+    padding:12px 14px ;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    background: white;
+}
+
+.upload-date{
+    color:#888;
+    font-size:14px;
+    margin:5px 0;
+}

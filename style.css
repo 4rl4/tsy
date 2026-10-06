@@ -1,0 +1,382 @@
+/* ===================================
+GLOBAL
+=================================== */
+
+
+.h1{
+ width: 50px;
+ text-align: center;
+}
+
+
+body {
+margin: 0;
+height: 145vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: "Trebuchet MS", sans-serif;
+background-image: url("image/forest 1.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(40,70,40,0.10);
+    pointer-events: none;
+}
+
+.container h1,
+.container h2,
+.container h3,
+.container p{
+    color:white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+/* ===================================
+HOME PAGE
+=================================== */
+
+.container {
+width: 90%;
+max-width: 1500px;
+padding: 40px;
+padding-top: 80px;
+border-radius: 25px;
+border: 1px solid rgba(255, 255, 255, 0.32);
+background: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(15px);
+-webkit-backdrop-filter: blur(15px);
+box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+margin-top: 30px;
+margin-bottom: 25px;
+font-size: 45px;
+}
+
+.avatar {
+width: 180px;
+height: 180px;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #b9fff6;
+box-shadow: 0 0 30px rgba(185, 255, 246, 0.7);
+
+}
+
+p {
+font-size: 25px;
+color: #444;
+}
+
+/* ===================================
+BUTTONS
+=================================== */
+
+button {
+padding: 12px 20px;
+border: none;
+border-radius: 20px;
+background: #87cefa;
+font-size: 18px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+button:hover {
+transform: scale(1.05);
+}
+
+.room-buttons {
+padding: 15px;
+border-radius: 30px;
+border: 1px solid rgba(135, 206, 250, 0.3);
+background: rgba(135, 206, 250, 0.2);
+backdrop-filter: blur(10px);
+color: white;
+}
+
+.room-buttons button:hover {
+transform: translateY(-3px);
+}
+
+.back-btn{
+    display: inline-block;
+    margin: 10px 0 20px 0;
+    padding :8px 14px;
+    background: #dff0d1;
+    border: 2px solid #7ee66c;
+    color: #2d4d2d;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+
+.back-btn:hover{
+    background: #c8e9b5;
+}
+
+/* ===================================
+MUSIC PLAYER
+=================================== */
+
+.music-player {
+margin-top: 20px;
+}
+
+.music-box {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+margin-top: 40px;
+
+}
+
+.mp3-player {
+width: 220px;
+height: auto;
+cursor: pointer;
+transition: transform 0.3s ease;
+filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
+}
+
+.mp3-player:hover {
+transform: scale(1.1);
+}
+/*.controls {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+#progress {
+width: 250px;
+display: block;
+margin: 20px auto;
+}
+
+/* ===================================
+MY WORLD PAGE
+=================================== */
+
+body.myworld-page {
+margin: 0;
+padding: 40px;
+background-image: url(image/cat.gif);
+font-family: Verdana, sans-serif;
+}
+
+.world-window {
+max-width: 990px;
+margin: auto;
+padding: 25px;
+background: #f8f8f8;
+border: 4px solid #9cff7a;
+}
+
+.status-bar {
+padding: 10px;
+margin-bottom: 25px;
+text-align: center;
+background: #eaffd7;
+border: 2px solid #9cff7a;
+}
+
+.main-content {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+}
+
+.diary-box {
+flex: 2;
+min-width: 300px;
+padding: 20px;
+background: white;
+border: 3px solid #8fd6ff;
+
+}
+
+.diary-box h2 {
+color: #3559ff;
+font-family: "Courier New", monospace;
+}
+
+.diary-box p {
+font-family: "Courier New", monospace;
+font-size: 20px;
+line-height: 1.6;
+}
+
+.mascot-box {
+flex: 1;
+text-align: center;
+}
+
+.mascot-box img {
+width: 180px;
+animation: float 3s ease-in-out infinite;
+}
+
+.subtitle {
+margin-top: 15px;
+margin-bottom: 20px;
+text-align: center;
+color: #666;
+font-size: 14px;
+
+}
+
+.cursor {
+animation: blink 1s infinite;
+}
+
+.random-quote {
+margin-top: 20px;
+text-align: center;
+font-style: italic;
+color: #666;
+transition: opacity 0.5s ease;
+
+}
+
+/* ===================================
+BINDER TABS
+=================================== */
+
+.wrapper {
+position: relative;
+display: inline-block;
+}
+
+.binder-tabs {
+position: absolute;
+top: 50%;
+right: -150px;
+
+
+transform: translateY(-50%);
+
+display: flex;
+flex-direction: column;
+gap: 12px;
+
+}
+
+.binder-tabs button {
+width: 140px;
+padding: 12px;
+border-radius: 0 15px 15px 0;
+background: rgba(255, 255, 255, 0.7);
+}
+
+.binder-tabs button:hover {
+transform: translateX(10px);
+}
+
+/* ===================================
+MUSIC BOX
+=================================== */
+.music-window{
+    width: 320px;
+    background: #cfc4bc;
+    border: 3px solid #6a6059;
+    box-shadow: 4px 4px 0 #4d4d4d;
+
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.window-header{
+    background :#8dc8ff ;
+    padding: 8px 12px;
+    font-weight: bold;
+    font-size: 18px;
+    border-bottom: 2px solid #6e655f;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.song-title{
+    background: #fff7b8;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #bca96e;
+    color:#5d7fa3;
+    font-weight: bold;
+}
+
+.player-time{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:20px;
+}
+
+.player-time span{
+    min-width:50px;
+}
+.controls {
+    display: "";
+    justify-content: "";
+    gap: 15px;
+    padding: 20px;
+}
+
+.controls button{
+    width:60px;
+    height:45px;
+    background: #dfdfdf;
+    border: 2px solid #7c7c7c; 
+    border-radius: 0;
+    box-shadow: inset 1px 1px 0 white,
+                inset -1px -1px 0 #999;
+    
+}
+
+
+
+
+/* ===================================
+ANIMATIONS
+=================================== */
+
+.spin {
+animation: spin 5s linear infinite;
+}
+
+@keyframes blink {
+50% {
+opacity: 0;
+}
+}
+
+@keyframes float {
+0%,
+100% {
+transform: translateY(0);
+}
+50% {
+    transform: translateY(-15px);
+}
+}
+
+@keyframes spin {
+from {
+transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+
+}

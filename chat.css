@@ -1,0 +1,171 @@
+.chat-room {
+    width: 80%;
+    margin:auto;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 40px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+.chat-room h2 {
+    text-align: center;
+    color: #5d8f72;
+}
+
+.chat-input {
+    flex:1;
+    padding: 12px;
+    border-radius:12px;
+    border: 2px solid #d8efd8;
+    outline:none;
+}
+
+.chat-input button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #8ccf9e;
+    color: white;
+}
+
+#chat-box {
+    height: 450px;
+    overflow-y:auto;
+    background: #f7fff7;
+    border-radius: 15px;
+    padding:20px;
+}
+
+.message{
+    background:white;
+    padding:12px;
+    border-radius:20px;
+    margin-bottom:15px;
+    box-shadow:0 5px 10px rgba(0,0,0,.05);
+    max-width: 65%;
+    width: fit-content;
+}
+
+.message strong{
+    color:#5a9a82;
+    font-size:15px;
+}
+
+.username{
+    margin-bottom: 8px;
+    color :#5d8f72;
+}
+
+.time {
+    font-size: 12px;
+    color: black;
+    margin-top: 8px;
+    opacity:.6;
+}
+
+
+
+#chat-box{
+    height:400px;
+    overflow-y:auto;
+    border:2px solid #d9f2df;
+    border-radius:20px;
+    padding:20px;
+    margin:20px 0;
+    background:#f8fff9;
+}
+
+.chat-input{
+    display:flex;
+    gap:10px;
+}
+
+.chat-input input{
+    flex:1;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #b8d8c0;
+}
+
+.chat-input button{
+    padding:12px 25px;
+    background:#88c9a1;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.chat-input button:hover{
+    background:#74b68d;
+}
+
+.message strong{
+    color:#5b8d74;
+}
+
+.time{
+    font-size:12px;
+    color:gray;
+
+}
+
+.message{
+    animation: pop .25s ease;
+}
+
+@keyframes pop{
+
+from{
+    transform:scale(.9);
+    opacity:0;
+}
+
+to{
+    transform:scale(1);
+    opacity:1;
+}
+
+}
+
+.emoji-bar{
+
+    display:flex;
+    gap:10px;
+
+    margin-bottom:15px;
+
+}
+
+.emoji-bar button{
+
+    border:none;
+
+    padding:8px 12px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+    background:#ffffff;
+
+    transition:0.2s;
+
+}
+
+.emoji-bar button:hover{
+
+    transform:scale(1.1);
+
+}
+#chat-box{
+
+    height:400px;
+
+    overflow-y:auto;
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create room's</title>
+    <link rel="stylesheet" href="draw-room.css">
+</head>
+<body>
+
+    <div class="window">
+        <h1>Create Room.exe</h1>
+        
+       <a href="myworld.html" class="back-btn">
+                ← Return to World
+       </a>
+
+       <div class="toolbar">
+
+         <input type="color" id="colorPicker" value="#000000">
+
+         <label>
+            🖌 Size:
+            <span id="sizeValue">3</span>
+            </label>
+
+            <input
+                type="range"
+                id="brushSize"
+                min="1"
+                max="20"
+                value="3"
+            >
+
+          <button id="clearBtn">
+            🗑 Clear
+          </button>
+
+          <button id="downloadBtn">
+             💾 Save Art
+          </button>
+
+       </div>
+
+      <canvas id="canvas"></canvas>
+
+    </div>
+
+    <script src="js/draw-room.js"></script>
+    
+</body>
+</html>

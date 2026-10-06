@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room's</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+
+<body>
+
+    <section class="chat-room">
+       <div class="chat-container">
+
+        <h1>💬 Chat Room</h1>
+
+        <p id="typing-indicator"
+
+        <!-- Tempat semua chat -->
+        <div id="chat-box">
+
+        </div>
+
+        <!-- Input -->
+        <div class="chat-input">
+
+
+            <div class="emoji-bar">
+
+            <button onclick="addEmoji('😀')">😀</button>
+            <button onclick="addEmoji('😭')">😭</button>
+            <button onclick="addEmoji('💚')">💚</button>
+            <button onclick="addEmoji('✨')">✨</button>
+            <button onclick="addEmoji('🔥')">🔥</button>
+
+        </div>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Your Name">
+
+            <input
+                type="text"
+                id="message"
+                placeholder="Type message...">
+
+            <button onclick="sendMessage()">
+                Send
+            </button>
+
+        </div>
+
+        </div>
+
+    </section>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="js/chat.js"></script>
+
+</body>
+</html>
